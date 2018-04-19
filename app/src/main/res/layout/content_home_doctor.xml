@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techbytecare.kk.healthcareproject.HomeDoctor"
+    tools:showIn="@layout/app_bar_home_doctor">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:weightSum="100"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="HOSPITAL"/>
+
+        <TextView
+            android:id="@+id/txtHospital"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:text="ABD"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/row1"
+        android:id="@+id/row2"
+        android:weightSum="100"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:text="PHONE"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:text="5152"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/row2"
+        android:id="@+id/row3"
+        android:weightSum="100"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:text="ADDRESS"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:text="Bangalore"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/row3"
+        android:id="@+id/forChoose"
+        android:weightSum="100"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:text="Email"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:inputType="textMultiLine"
+            android:text="Kundank315@gmail.com"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_below="@id/forChoose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="CHOOSE FIELD"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:shadowColor="@android:color/transparent"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"/>
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="true"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnGetPatient"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="GET USER"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnMoisture"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="Moisture"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnPulse"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="Pulse"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnAccelerate"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="ACCELEROMETER"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnLat"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="Latitude"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnLng"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:text="Longitude"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    app:fButtonColor="@android:color/white"
+                    app:shadowColor="@android:color/transparent"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="3dp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

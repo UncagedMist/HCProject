@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.techbytecare.kk.healthcareproject.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WELCOME IN"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_below="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="HEALTH CARE SYSTEM"
+        android:textColor="#FF3D00"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="8dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowColor="@android:color/transparent"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="8dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="REGISTER"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="8dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowColor="@android:color/transparent"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

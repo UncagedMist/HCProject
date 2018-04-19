@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context="com.techbytecare.kk.healthcareproject.SignUpDoctor">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/logDetails"
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@android:color/white"
+            android:textSize="24sp"
+            android:inputType="phone"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtClinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital Name"
+        android:inputType="text"
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp"
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/white"
+        app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white"
+            android:textSize="24sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@android:color/white"
+            android:textSize="24sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:layout_below="@id/logDetails"
+        android:id="@+id/btnRegister"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed To REGISTER"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"
+        app:fButtonColor="@android:color/white"
+        app:shadowColor="@android:color/transparent"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account?"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/btnRegister"/>
+
+</RelativeLayout>
